@@ -1,0 +1,680 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Shadows Into Light', cursive;
+}
+header{
+    width: 100%;
+    /*background-image: url("../images/header.jpg");
+    background-position: bottom;*/
+    background-color: #c3d3e2;
+    /*background-color: #f3eeeb;*/
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+header ul,footer ul{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+header ul li{
+    margin: 0px 10px;
+}
+header ul li a{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+header ul li a i,footer ul li a i{
+    font-size: 20px;
+}
+#naslov{
+    text-align: center;
+    width: 100%;
+    padding: 30px 0px;
+}
+h1{
+    font-size: 40px;
+}
+#naslov a{
+    font-size: 30px;
+}
+#naslov a h1{
+    font-size: 60px;
+    margin: 20px 0px;
+}
+a{
+    text-decoration: none!important;
+    color: #1a202c;
+}
+a:hover{
+    color: #1a202c;
+}
+div img{
+    width: 100%;
+}
+h1,h2{
+    font-weight: lighter;
+}
+h2{
+    font-size: 30px;
+}
+#featured{
+    padding: 20px;
+    text-align: center;
+}
+#featuredPost{
+    width: 95%;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.post{
+    padding: 10px;
+    border: 1px solid #f3eeeb;
+    padding: 10px;
+    width: 23%;
+    margin-bottom: 15px;
+}
+.post div{
+    width: 100%;
+    padding: 20px;
+    background-color: #f3eeeb;
+}
+.post p{
+    font-size: 20px;
+}
+.post hr{
+    border: 1px solid #fff;
+}
+#pictures{
+    display: flex;
+}
+footer{
+    /*background-color: #f3eeeb;*/
+    background-color: #c3d3e2;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+#footerContent{
+    width: 60%;
+    margin: 0px auto;
+}
+#footerContent a{
+    font-size: 50px;
+}
+#footerContent p{
+    font-size: 25px;
+    margin: 20px 0px;
+}
+footer ul{
+    justify-content: center;
+}
+footer li a{
+    padding: 10px;
+}
+#footerContent li a i{
+
+    font-size: 30px;
+}
+footer li{
+    margin: 10px;
+}
+#seeON{
+    text-align: center;
+    padding: 15px 0px;
+    background-color: #f3eeeb;
+    margin: 30px 0px;
+}
+#featuredBy{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#featuredBy div{
+    width: 18%;
+}
+#featuredBy img{
+    filter: grayscale(100%);
+}
+#regLog{
+    background-color: #c3d3e2;
+    position: fixed;
+    z-index: 99;
+    top: 50px;
+    left: 25%;
+    right: 25%;
+    text-align: center;
+    padding-bottom: 20px;
+    display: none;
+}
+#regLog a{
+    font-size: 20px;
+}
+#regDiv{
+    display: none;
+}
+#close{
+    position: absolute;
+    right: 10px;
+    color: #fff;
+}
+#linkoviLogReg{
+    width: 100%;
+    display: flex;
+}
+#linkoviLogReg a{
+    width: 50%;
+    padding: 20px;
+}
+#regLog input[type='text'],#regLog input[type='password'],input[type='button'],#contactForm input[type='text'],textarea,#mainAdmin input[type='text'],#mainAdmin input[type='password']{
+    width: 60%;
+    background-color: #c3d3e2;
+    padding: 10px;
+    border: 0px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#regLog input[type='button']{
+    background-color: #1a202c;
+    color: #fff;
+    border: 1px solid #1a202c;
+}
+#logDiv,#regDiv{
+    padding: 15px 0px;
+}
+.neaktivan{
+    background-color: #1a202c;
+    color: #fff;
+}
+#onePost{
+    width: 90%;
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#slikaPost{
+    width: 40%;
+}
+#slikaPost div:nth-child(1){
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+}
+#slikaPost div:nth-child(2){
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+}
+#slikaPost div:nth-child(n+2){
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+#slikaPost div:nth-child(2n+2){
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+}
+#textPost{
+    width: 50%;
+    text-align: justify;
+    font-family: cursive;
+    line-height: 1.6;
+}
+#aboutMe{
+    width: 70%;
+    margin: 0px auto;
+    background-color: #f3eeeb;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    position: relative;
+    margin-bottom: 20px;
+    min-height: 800px;
+}
+#hi{
+    width: 50%;
+    top: 10px;
+    left: 10px;
+    padding: 30px;
+    font-size: 20px;
+}
+#aboutImg{
+    width: 40%;
+    right: 30px;
+    top: -20px;
+    min-height: 400px;
+    position: absolute;
+}
+#image{
+    width: 45%;
+    position: absolute;
+    bottom: 240px;
+    left: -40px;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+}
+#text2{
+    width: 45%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+}
+#about2{
+    width: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+}
+#contactContainer{
+    margin: 0px auto;
+    width: 85%;
+    min-height: 600px;
+    background-image: url("../images/card.jpg");
+    background-position: top right;
+    background-size: cover;
+    margin-bottom: 40px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    padding-top: 220px;
+    flex-wrap: wrap;
+}
+#textContact{
+    width: 40%;
+    text-align: justify;
+    line-height: 1.8;
+}
+#textContact p{
+    margin-top: 30px;
+}
+#contactForm{
+    width: 45%;
+}
+#contactForm input[type='text'],textarea,#mainAdmin input[type='text'],#mainAdmin input[type='password']{
+    background-color: rgba(1,1,1,0);
+    border: 1px solid #1a202c;
+    width: 100%;
+}
+textarea{
+    height: 200px;
+    resize: none;
+}
+#contactContainer input[type='button']{
+    width: 100%;
+}
+input,textarea{
+    font-family: "Shadows Into Light";
+    font-size: 15px;
+}
+#pagination{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#pagination a{
+    font-size: 25px;
+    margin: 5px;
+    padding: 3px 10px;
+    background-color: #c3d3e2;
+    border-radius: 5px;
+}
+#pagination .active{
+    background-color: #f3eeeb;
+}
+#comments{
+    width: 90%;
+    margin: 15px auto;
+}
+.comment{
+    width: 100%;
+    border-bottom: 1px solid #1a202c;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    position: relative;
+}
+#comments p{
+    font-size: 20px;
+}
+#comments h2{
+    margin-top: 10px;
+}
+#commentsDiv{
+    margin-top: 10px;
+}
+#btnComment,#btnEditComment{
+    width: 200px;
+    background-color: #1a202c;
+    color: #fff;
+    border: 1px solid #1a202c;
+}
+.editDelete{
+    position: absolute;
+    right: 5px;
+}
+.editDelete i{
+    font-size: 20px;
+}
+#likes{
+    border-bottom: 1px solid #1a202c;
+}
+#likes i,#likes span{
+    font-size: 25px;
+}
+#likedPost{
+    color: #71ace3;
+}
+#userEdit{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#userInfo,#editForm{
+    width: 45%;
+}
+#userInfo p{
+    font-size: 25px;
+}
+#editForm input{
+    margin-bottom: 10px;
+    width: 100%;
+}
+#searchDiv{
+    width: 95%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#hashtags{
+    width: 50%;
+}
+#btnSearch{
+    padding: 6px;
+    width: 150px;
+}
+#searchDiv input[type='text']{
+    padding: 5px;
+    border: 0px;
+    border: 1px solid #1a202c;
+    border-radius: 5px;
+}
+#adminDiv{
+    width: 100%;
+    display: flex;
+}
+.formAddPostUser p,.formAddPostUser span,.formAddPostUser :not(#summernotes){
+    font-size: 18px;
+}
+#navAdmin p,#navAdmin a{
+    color: #ffffff;
+}
+#navAdmin{
+    background-color: #1a202c;
+    min-height: 650px;
+    width: 15%;
+}
+#navAdmin ul{
+    list-style-type: none;
+}
+#navAdmin i{
+    font-size: 20px;
+}
+#navAdmin p{
+    padding: 10px;
+    background-color: #4a5568;
+}
+#navAdmin li{
+    margin: 15px 0px;
+}
+#navAdmin ul li a{
+    padding: 10px 25px;
+}
+#mainAdmin{
+    width: 95%;
+    padding: 30px 40px;
+}
+#mainAdmin h1{
+    color: #1a202c;
+}
+#navAdmin #home{
+    padding: 15px;
+    margin: 15px;
+    font-size: 20px;
+}
+#navAdmin #adminSite{
+    margin-top: 10px;
+    background-color: #1a202c;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+}
+#navAdmin #home{
+    padding-top: 10px;
+}
+#adminDiv a:hover,#adminDiv a{
+    text-decoration: none;
+}
+#mainAdmin table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    text-align: center;
+}
+#mainAdmin table a{
+    color: #fff;
+}
+#mainAdmin th{
+    text-align: center;
+    padding: 10px;
+}
+#mainAdmin table tr{
+    border-bottom: 1px solid #4a5568;
+}
+#mainAdmin table td{
+    padding: 10px;
+}
+#mainAdmin tr:nth-child(even){
+    background-color: #4a5568;
+    color: #fff;
+}
+#mainAdmin tr:nth-child(odd) a{
+    color: #1a202c;
+}
+#mainAdmin table tr td img{
+    width: 50%;
+}
+#mainAdmin #pagination{
+    width: 100%;
+}
+#summernote p,#mainAdmin input[type='text']{
+    color: #1a202c;
+
+}
+.blogAuthor p,.blogAuthor a{
+    font-size: 20px;
+}
+.formAddPostUser{
+    width: 90%;
+    margin: 0px auto;
+}
+.note-editor .note-editing-area{
+    min-height: 400px;
+}
+#imagesPostAdmin{
+    width: 100%;
+}
+#auth{
+    width: 50%;
+    margin: 0px auto;
+    text-align: center;
+}
+#auth img{
+    width: 50%;
+}
+#footerContent .linkAutor{
+    font-size: 25px;
+}
+@media screen and (max-width: 1024px){
+    .post{
+        width: 40%;
+    }
+    #footerContent{
+        width: 90%;
+    }
+    #regLog{
+        left: 20%;
+        right: 20%;
+    }
+    #textContact{
+        width: 30%;
+    }
+    #regLog{
+        top: 20px;
+    }
+}
+@media screen and (max-width: 900px){
+    #onePost{
+        justify-content: center;
+    }
+    #textPost{
+        width: 100%;
+        margin-top: 20px;
+    }
+    #slikaPost{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    #aboutMe{
+        width: 90%;
+    }
+    #contactContainer{
+        justify-content: center;
+    }
+    #textContact,#contactForm{
+        width: 90%;
+    }
+    #regLog{
+        left: 10%;
+        right: 10%;
+    }
+    .blogAuthor{
+        text-align: center;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 750px){
+    #aboutMe{
+        min-height: 900px;
+        padding: 25px;
+        padding-top: 10px;
+    }
+    #hi{
+        width: 100%;
+    }
+    #image{
+        top: 25%;
+        left: 10px;
+    }
+    #aboutImg{
+        top: 25%;
+    }
+    #about2{
+        bottom: 25%;
+    }
+    #text2{
+        margin: 0px auto;
+        text-align: center;
+        width: 90%;
+        bottom: 20px;
+        left: 10px;
+        right: 10px;
+    }
+    #regLog{
+        left: 3%;
+        right: 3%;
+    }
+}
+#formPost{
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 640px){
+    #network{
+        display: none;
+    }
+    header nav{
+        width: 100%;
+    }
+    header ul{
+        justify-content: center;
+    }
+    header ul li a{
+        font-size: 20px;
+    }
+    #footerContent li a i,#footerContent p,h2{
+        font-size: 20px;
+    }
+    #footerContent a,#naslov h1{
+        font-size: 30px;
+    }
+    .post{
+        width: 90%;
+    }
+    .post p{
+        font-size: 16px;
+    }
+    #featured{
+        padding: 10px;
+    }
+    footer{
+        padding: 25px 0px;
+    }
+    #naslov{
+        padding: 40px;
+    }
+    #hi p,#text2 p{
+        font-size: 16px;
+    }
+    #aboutMe{
+        min-height: 800px;
+    }
+    #image{
+         top: 220px;
+    }
+    #about2{
+        top: 350px;
+    }
+    #contactContainer{
+        padding-top: 330px;
+        width: 95%;
+    }
+    #userInfo,#editForm{
+        width: 100%;
+        text-align: center;
+    }
+}
