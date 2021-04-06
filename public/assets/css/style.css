@@ -53,6 +53,9 @@ a{
 a:hover{
     color: #1a202c;
 }
+#regLog a:hover{
+    color: #ffffff;
+}
 div img{
     width: 100%;
 }
@@ -537,6 +540,9 @@ input,textarea{
 }
 #footerContent .linkAutor{
     font-size: 25px;
+}
+.blogAuthor{
+    width: 50%;
 }
 @media screen and (max-width: 1024px){
     .post{
